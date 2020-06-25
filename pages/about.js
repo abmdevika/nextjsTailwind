@@ -1,131 +1,189 @@
+import Link from 'next/link';
 function About() {
   return (
-    <div className='wrapper row4'>
-      <footer id='footer' className='hoc clear'>
-        <div className='one_quarter first'>
-          <h6 className='heading'>Praesent id aliquam</h6>
-          <p>
-            Non tellus nec sapien lobortis lobortis mauris egestas massa ac
-            cursus pellentesque leo risus convallis nulla et fringilla sapien
-            magna sit amet magna aliquam tempus praesent sit amet neque sed
-            lobortis nulla facilisi [<a href='#'>&hellip;</a>]
-          </p>
-          <ul className='faico clear'>
-            <li>
-              <a className='faicon-facebook' href='#'>
-                <i className='fab fa-facebook'></i>
-              </a>
-            </li>
-            <li>
-              <a className='faicon-google-plus' href='#'>
-                <i className='fab fa-google-plus-g'></i>
-              </a>
-            </li>
-            <li>
-              <a className='faicon-linkedin' href='#'>
-                <i className='fab fa-linkedin'></i>
-              </a>
-            </li>
-            <li>
-              <a className='faicon-twitter' href='#'>
-                <i className='fab fa-twitter'></i>
-              </a>
-            </li>
-            <li>
-              <a className='faicon-vk' href='#'>
-                <i className='fab fa-vk'></i>
-              </a>
-            </li>
-          </ul>
+    <>
+      <div className='py-12 bg-white'>
+        <div className='max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='lg:text-center'>
+            <p className='text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase'>
+              Transactions
+            </p>
+            <h3 className='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10'>
+              A better way to send money
+            </h3>
+            <p className='mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto'>
+              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
+              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+            </p>
+          </div>
+
+          <div className='mt-10'>
+            <ul className='md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10'>
+              <li>
+                <div className='flex'>
+                  <div className='flex-shrink-0'>
+                    <div className='flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white'>
+                      <svg
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className='ml-4'>
+                    <h4 className='text-lg leading-6 font-medium text-gray-900'>
+                      Competitive exchange rates
+                    </h4>
+                    <p className='mt-2 text-base leading-6 text-gray-500'>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Maiores impedit perferendis suscipit eaque, iste dolor
+                      cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className='mt-10 md:mt-0'>
+                <div className='flex'>
+                  <div className='flex-shrink-0'>
+                    <div className='flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white'>
+                      <svg
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className='ml-4'>
+                    <h4 className='text-lg leading-6 font-medium text-gray-900'>
+                      No hidden fees
+                    </h4>
+                    <p className='mt-2 text-base leading-6 text-gray-500'>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Maiores impedit perferendis suscipit eaque, iste dolor
+                      cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className='mt-10 md:mt-0'>
+                <div className='flex'>
+                  <div className='flex-shrink-0'>
+                    <div className='flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white'>
+                      <svg
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='M13 10V3L4 14h7v7l9-11h-7z'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className='ml-4'>
+                    <h4 className='text-lg leading-6 font-medium text-gray-900'>
+                      Transfers are instant
+                    </h4>
+                    <p className='mt-2 text-base leading-6 text-gray-500'>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Maiores impedit perferendis suscipit eaque, iste dolor
+                      cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className='mt-10 md:mt-0'>
+                <div className='flex'>
+                  <div className='flex-shrink-0'>
+                    <div className='flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white'>
+                      <svg
+                        className='h-6 w-6'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className='ml-4'>
+                    <h4 className='text-lg leading-6 font-medium text-gray-900'>
+                      Mobile notifications
+                    </h4>
+                    <p className='mt-2 text-base leading-6 text-gray-500'>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Maiores impedit perferendis suscipit eaque, iste dolor
+                      cupiditate blanditiis ratione.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className='one_quarter'>
-          <h6 className='heading'>Rutrum amet sodales</h6>
-          <ul className='nospace linklist'>
-            <li>
-              <a href='#'>Nulla tincidunt magna</a>
-            </li>
-            <li>
-              <a href='#'>Vel iaculis mollis mi</a>
-            </li>
-            <li>
-              <a href='#'>Lacus tincidunt diam ac</a>
-            </li>
-            <li>
-              <a href='#'>Varius purus justo pretium</a>
-            </li>
-            <li>
-              <a href='#'>Nunc proin tortor elit</a>
-            </li>
-          </ul>
+      </div>
+      <div className='flex bg-gray-50'>
+        <div className='max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between'>
+          <h2 className='text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10'>
+            Ready to dive in?
+            <br />
+            <span className='text-indigo-600'>
+              Start your free trial today.
+            </span>
+          </h2>
+          <div className='mt-8 flex lg:flex-shrink-0 lg:mt-0'>
+            <div className='inline-flex rounded-md shadow'>
+              <a
+                href='#'
+                className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out'
+              >
+                Get started
+              </a>
+            </div>
+            <div className='ml-3 inline-flex rounded-md shadow'>
+              <a
+                href='/'
+                className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out'
+              >
+                Learn more
+              </a>
+            </div>
+            <Link href='/'>
+              <div className='ml-3 inline-flex rounded-md shadow'>
+                <a className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out'>
+                  Home
+                </a>
+              </div>
+            </Link>
+          </div>
         </div>
-        <div className='one_quarter'>
-          <h6 className='heading'>At feugiat in diam</h6>
-          <p className='nospace btmspace-15'>
-            In vestibulum dolor et augue fusce neque enim scelerisque at
-            fermentum.
-          </p>
-          <form action='#' method='post'>
-            <fieldset>
-              <legend>Newsletter:</legend>
-              <input
-                className='btmspace-15'
-                type='text'
-                value=''
-                placeholder='Name'
-              />
-              <input
-                className='btmspace-15'
-                type='text'
-                value=''
-                placeholder='Email'
-              />
-              <button className='btn' type='submit' value='submit'>
-                Submit
-              </button>
-            </fieldset>
-          </form>
-        </div>
-        <div className='one_quarter last'>
-          <h6 className='heading'>Sed imperdiet pharetra</h6>
-          <ul className='nospace linklist'>
-            <li>
-              <article>
-                <h6 className='nospace font-x1'>
-                  <a href='#'>Massa nam nulla augue</a>
-                </h6>
-                <time
-                  className='font-xs block btmspace-10'
-                  datetime='2045-04-06'
-                >
-                  Friday, 6<sup>th</sup> April 2045
-                </time>
-                <p className='nospace'>
-                  Faucibus nec lacinia quis ornare a eros pellentesque in orci
-                  vitae
-                </p>
-              </article>
-            </li>
-            <li>
-              <article>
-                <h6 className='nospace font-x1'>
-                  <a href='#'>Velit vehicula auctor</a>
-                </h6>
-                <time
-                  className='font-xs block btmspace-10'
-                  datetime='2045-04-05'
-                >
-                  Thursday, 5<sup>th</sup> April 2045
-                </time>
-                <p className='nospace'>
-                  Pellentesque pulvinar vestibulum bibendum blandit lectus
-                  pretium
-                </p>
-              </article>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }
 
