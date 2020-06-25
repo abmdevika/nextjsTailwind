@@ -5,10 +5,10 @@ import Nav from './Nav';
 
 const Home = () => (
   <main className='bg-white font-abhaya-libre relative'>
-    <Nav />
     <header className='h-24 sm:h-32 flex items-center absolute top-0 right-0 z-20'>
       <div className='container mx-auto px-6 sm:px-12 flex items-center justify-end'>
         <nav className='flex items-center'>
+          <Nav />
           <Link href='/'>
             <a className='hidden xl:block font-abhaya-libre uppercase text-gray-800 tracking-wider px-4 xl:px-8 py-2 text-lg hover:underline'>
               Home
@@ -58,7 +58,6 @@ const Home = () => (
         </a>
       </div>
       <div className='hidden sm:flex items-center justify-center xl:justify-end w-1/2 xl:w-4/6 py-32'>
-        //{' '}
         <svg
           className='h-full w-2/3'
           xmlns='http://www.w3.org/2000/svg'
@@ -133,7 +132,7 @@ const Home = () => (
         </svg>
       </div>
     </div>
-    //{' '}
+
     <svg
       className='absolute left-0 top-0 w-full h-full'
       xmlns='http://www.w3.org/2000/svg'
@@ -146,7 +145,7 @@ const Home = () => (
           <path fill='none' d='M645.55 419.74H0V0h645.55z' />
         </clipPath>
       </defs>
-      <g clip-path='url(#a)'>
+      <g clipPath='url(#a)'>
         <path
           fill='#fdf0ec'
           d='M40.66 90c21.45-2.15 35.74-20.91 56.58-26.38 20.11-5.27 42.25-3.48 60.75 6.26 11.12 5.84 20.8 14.13 31.9 20s24.62 9.22 36.19 4.32C241.91 87.5 247.09 69.91 252 55c3.8-11.57 8.11-22.69 16-31.88 8.3-9.68 15.56-20.46 19-32.9 10.79-39.52-31.18-79.35-64-93.81-29-12.8-61.58-15.52-93.25-13.74-32.54 1.83-65.31 8.42-94 23.84s-53.2 40.36-63.69 71.22c-9.44 27.78-6.82 62.8 13.64 85.41C.28 79.25 19.7 92 40.66 90zM660.67 313.05c-39.14-30.87-98.63-28.29-135.24 5.39-22.55 20.75-38.88 56.74-31.71 87.63 5.32 23 23 38.46 42.1 50.39 22.18 13.87 45.92 29.54 73.47 25.19 21.46-3.35 39.46-18.89 51-37.3 7.37-11.8 12.47-24.8 16.73-38 3.32-10.3 9.23-21.91 10.59-32.51 2.97-23.34-8.83-46.51-26.94-60.79z'
